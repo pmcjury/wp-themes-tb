@@ -1,0 +1,398 @@
+/*
+Theme Name: Football Club
+*/
+
+body {
+	direction: rtl;
+}
+
+/* LINK BUTTON */
+
+.link-button {	
+	display: block;
+	border: 1px solid #CCC;
+	padding: 1px;
+	float: left;
+}
+#header {
+	padding-right: 16px;
+}
+#header #logo {
+	float: right;
+}
+#header #maintitle {
+	float: right;
+}
+#header #maintitle h1 a {
+	padding-right: 16px;
+}
+#header #maintitle h2 a {
+	padding-right: 16px;
+}
+#header #sponsor {
+	float: left;
+	margin: 16px 0 16px 16px;
+}
+
+/* HEADERS */
+
+.entry-title h1,
+.page-title h1 {
+	float: right;
+}
+.entry-title .post-date, .page-title .post-date {
+	float: left;
+}
+
+/* SOCIAL */
+
+#header #social {
+	left: auto;
+	right: -48px;
+}
+
+/* MAIN MENU */
+
+#menu li {
+	float: right;
+}
+
+/* MENU LEVEL 2 */
+
+#menu li ul.children,
+#menu li ul.sub-menu {
+	left: auto;
+	right: -1px;
+}
+
+/* MENU LEVEL 3 */
+
+#menu li ul.children li ul.children,
+#menu li ul.sub-menu li ul.children,
+#menu li ul.children li ul.sub-menu,
+#menu li ul.sub-menu li ul.sub-menu {
+	left: auto;
+	right: 100%;
+	border-right: none;
+}
+#menu #searchform {
+	float: left;
+}
+#menu #searchform li.query {
+	border-right: none;
+}
+#menu #searchform label,
+#menu #searchform input {
+	float: right;
+}
+
+/* IMAGE ROTATOR */
+
+.image-rotator .main_image,
+.image-rotator .image_thumb {
+	float: right;
+}
+.image-rotator .main_image h3 {
+	padding: 10px 16px 10px 0;
+}
+.image-rotator .main_image ul li {
+	left: auto;
+	right: 0;
+}
+.image-rotator .main_image .block time {
+	right: auto;
+	left: 16px;
+}
+.image-rotator .main_image .desc {
+	left: auto;
+	right: 0;
+}
+.image-rotator .image_thumb img {
+	float: right;
+}
+.image-rotator .image_thumb ul li{
+	padding: 10px 10px 11px 0;
+	float: right;
+}
+.image-rotator .image_thumb ul li .more {
+	right: auto;
+	left: 10px;
+}
+.image-rotator .image_thumb ul li .block {
+	float: right;
+	margin-left: 0;
+	margin-right: 10px;
+}
+
+/* MINI IMAGE ROTATOR */
+
+.mini-rotator .image_thumb ul li{
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-left-width: 0;
+	border-left-style: none;
+}
+
+/* MAIN AREA */
+
+#container {
+	float: right;
+}
+#main {
+	background-position: 354px 0;
+}
+.home #main #content, .page-template-page-home-php #main #content {
+	padding: 8px 8px 28px 0;
+}
+#sidebar {
+	float: left;
+	margin: 8px 0 8px 8px;
+}
+.commentlist .comment .comment-author {
+	float: right;
+}
+.commentlist .comment .comment-author .avatar {
+	float: right;
+	margin-right: 0;
+	margin-left: 8px;
+}
+.commentlist .comment .comment-awaiting-moderation {
+	right: auto;
+	left: 0;
+}
+.commentlist .comment .comment-meta {
+	float: right;
+	clear: right;
+}
+.commentlist .comment .reply {
+	float: left;
+}
+#content section .tb_section_views {
+	right: auto;
+	left: 1px;
+}
+#content section .tb_section_views li {
+	float: right;
+	margin-right: 0;
+	margin-left: 4px;
+}
+ul.tb_matches-sidebar .home-logo {
+	float: right;
+}
+ul.tb_matches-sidebar .away-logo {
+	float: left;
+}
+a.tb_view_all {
+	text-align: left;
+}
+
+/* FOOTER */
+
+footer .left {
+	float: left;
+}
+footer .right {
+	float: right;
+}
+footer a {
+	color: #333;
+}
+footer a:hover {
+	color: #000;
+}
+
+/* LIST POSTS */
+.post-row .post-thumbnail {
+	float: right;
+	margin-right: 0;
+	margin-left: 20px;
+}
+.post-row .post {
+	float: right;
+}
+.post-row .post .entry-summary .readmore {
+	float: left;
+}
+
+/* PAGE NAVIGATION */
+
+#content .navigation .nav-previous {
+	float: right;
+}
+#content .navigation .nav-next {
+	float: left;
+}
+
+/* TABLES */
+
+#main table thead tr th,
+table #main thead tr td {
+	text-align: right;
+}
+table tbody tr th,
+table tbody tr td {
+	text-align: right;
+}
+table.tb_standings tr td.club {
+	text-align: right;
+}
+table tbody tr td.club .pos {
+	margin-right: 0;
+	margin-left: 10px;
+	float: right;
+}
+table tbody tr td.club img.crest {
+	margin-right: 0;
+	margin-left: 6px;
+	float: right;
+}
+table tbody tr td.flag {
+	padding: 0 8px 0 4px;
+}
+table tbody tr td.flag img.flag {
+	margin-left: 0;
+}
+#sidebar table.tb_standings tbody tr td.club img.crest {
+	margin-left: 0;
+}
+table.tb_matches-normal .crest {
+	float: right;
+	margin-right: 0;
+	margin-left: 4px;
+}
+table.tb_fixtures .home,
+table.tb_fixtures .away,
+table.tb_results .home,
+table.tb_results .away,
+table .date {
+	text-align: right;
+}
+
+/* MATCH STATISTIC NOTES */
+
+.notes .goal,
+.notes .assist,
+.notes .yellowcard,
+.notes .redcard,
+.notes .sub {
+	float: right;
+}
+
+/* PLAYERS */
+
+.tb_players td,
+.tb_players th {
+	text-align: right;
+}
+.tb_players .gallery-view li {
+	float: right;
+	margin-right: 0;
+	margin-left: 12px;
+}
+.tb_players .gallery-view li.first {
+	clear: right;
+}
+.tb_players .gallery-view li.last {
+	margin-left: 0;
+}
+.tb_players .gallery-view li .number {
+	left: auto;
+	right: 0;
+}
+
+/* STAFF */
+
+.staff .post-row .staff-post {
+	float: right;
+}
+
+/* PROFILE PAGES */
+
+#content .profile-box .entry-title {
+	float: right;
+}
+#content .profile-box #switch-player-profile {
+	float: left;
+}
+#content .profile-image {
+	float: right;
+	clear: right;
+}
+#content .profile-image img {
+	float: right;
+}
+#content .profile-details {
+	float: left;
+}
+#content .profile-box .profile-details tr td {
+	text-align: right;
+}
+
+/* MATCH DETAILS */
+
+.match-info .date,
+.match-info time,
+.match-info .score {
+	float: left;
+	clear: left;
+}
+.match-info .teams {
+	float: right;
+}
+.match-info .teams .home-logo,
+.match-info .teams .away-logo,
+.match-info .teams span {
+	float: right;
+}
+
+/* GOOGLE MAP */
+
+.google-map {
+	float: left;
+	margin-left: 0;
+	margin-right: 16px;
+}
+
+/* CONTACT FORM */
+
+.contactform form .eroror {
+	margin-left: 0;
+	margin-right: 6px;
+}
+.contactform .actions span {
+	float: right;
+}
+
+/* GALLERY */
+
+.gallery .gallery-icon a {
+	float: right;
+}
+
+/* 404 PAGE */
+
+.not-found form input#s {
+	float: right;
+}
+.not-found form input#searchsubmit {
+	float: left;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 993px) {
+	.image-rotator .image_thumb ul li {
+		padding-left: 10px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#main {
+		background-position: 299px 0;
+	}
+}
+@media only screen and (max-width: 599px) {
+	#main {
+		background-image: none;
+	}
+}
