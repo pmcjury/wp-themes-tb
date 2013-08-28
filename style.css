@@ -17,7 +17,7 @@ header, nav, article, footer, address { display: block; }
 body {
 	background-color: #dadada;
 	margin: 0;
-	font: 13px SteelfishRgRegular , "Helvetica Neue", HelveticaNeue, Helvetica, Arial, "Lucida Grande", sans-serif;
+	font: 13px "Helvetica Neue", HelveticaNeue, Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: 300;
 }
 p {
