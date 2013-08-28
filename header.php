@@ -1,5 +1,24 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>><head>
+<html <?php language_attributes(); ?>>
+<head>
+<!-- font loader -->
+<script type="text/javascript">
+WebFontConfig = {
+custom: {
+families: ['SteelfishRgRegular'],
+urls: ['<?php echo get_bloginfo('stylesheet_directory'); ?>/fonts.css']
+}
+};
+(function() {
+var wf = document.createElement('script');
+wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+  '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+wf.type = 'text/javascript';
+wf.async = 'true';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(wf, s);
+})(); </script>
+<!-- end font loader -->
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <title><?php
 global $page, $paged;
