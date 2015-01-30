@@ -6,7 +6,6 @@
 get_header(); ?>
 
 		<div id="fight" class="one-column container-fluid">
-			<div class="col-sm-12">
 				<div class="featured-image">
 					<?php the_post_thumbnail('onecolumn-image', array('title' => get_the_title())); ?>
 				</div>
@@ -55,7 +54,6 @@ get_header(); ?>
 	      				 ?>
 	      			</div>
 	      		</div>
-      		</div>
 		</div><!-- #container -->
 
 <?php get_footer(); ?>

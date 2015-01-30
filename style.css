@@ -1817,11 +1817,14 @@ input[type="submit"]:hover {
 }
 
 /*boxing*/
-#fight{
+/*#fight{
 	width: auto;
 	float: none;
 	border: none;
 
+}*/
+.single-boxing .featured-image img {
+	margin-left: -15px;
 }
 .fighter{
 	overflow: hidden;
