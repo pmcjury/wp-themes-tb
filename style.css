@@ -1,8 +1,8 @@
 /*
-Theme Name: Football Club
+Theme Name: VLRFC based on Football Club
 Theme URI: http://www.themeboy.com/themes/footballclub
 Description: Soccer Team Wordpress Theme
-Author: ThemeBoy
+Author: ThemeBoy / VLRFC Web Team
 Author URI: http://www.themeboy.com
 Version: 2.3.2
 Tags: light, white, gray, two-columns, right-sidebar, fixed-width, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, theme-options, translation-ready, rtl-language-support, responsive
@@ -1814,4 +1814,59 @@ input[type="submit"]:hover {
 	clear: both;
 	display: block;
 	padding-top: 16px;
+}
+
+/*boxing*/
+#fight{
+	width: auto;
+	float: none;
+	border: none;
+
+}
+.fighter{
+	overflow: hidden;
+	width: 47%;
+	background-color: rgba(252,0,0,0.7);
+	border-radius: 5px;
+	text-align: center;
+	margin: 5px;
+	font-family: SteelfishRgRegular, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+.fighter img{
+	padding-top: 15px;
+}
+.fighter p{
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 1.692em;
+
+}
+.fighter_one{
+	float: left;
+}
+.fighter_two{
+	float: right;
+}
+.wdf_fundraiser_panel{
+	display: none;
+}
+.single-funder .entry-title{
+	text-align: center;
+	font-size: 2.923em;
+}
+.versus{
+	text-align: center;
+}
+.fighter h3{
+	width: 50%;
+}
+
+.boxer_name{
+	float: left;
+}
+.boxer_height{
+	float: right;
+}
+.boxer h4{
+	text-align: left;
 }

@@ -104,4 +104,193 @@ include('inc/enqueue-scripts.php');
 include('inc/enqueue-styles.php');
 include('inc/custom-styles.php');
 
+//tax meta
+include('Tax-Meta-Class/Tax-meta-class/Tax-meta-class.php');
+
+add_action( 'init', 'register_cpt_boxing' );
+
+function register_cpt_boxing() {
+
+    $labels = array(
+        'name' => _x( 'boxing', 'boxing' ),
+        'singular_name' => _x( 'boxing', 'boxing' ),
+        'all_items'           => __( 'All Boxing Matches', 'boxing' ),
+        'add_new' => _x( 'Add New', 'boxing' ),
+        'add_new_item' => _x( 'Add New boxing', 'boxing' ),
+        'edit_item' => _x( 'Edit Boxing Match', 'boxing' ),
+        'new_item' => _x( 'New Boxing Match', 'boxing' ),
+        'view_item' => _x( 'View Boxing Match', 'boxing' ),
+        'search_items' => _x( 'Search Boxing Matches', 'boxing' ),
+        'not_found' => _x( 'No Boxing Matches found', 'boxing' ),
+        'not_found_in_trash' => _x( 'No boxing found in Trash', 'boxing' ),
+        'parent_item_colon' => _x( 'Parent boxing:', 'boxing' ),
+        'menu_name' => _x( 'Boxing Matches', 'boxing' ),
+    );
+
+    $args = array(
+        'labels' => $labels,
+        'hierarchical' => true,
+
+		'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'custom-fields', 'page-attributes' ),
+        'taxonomies' => array( 'category', 'post_tag', 'page-category' ),
+        'public' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'show_in_nav_menus' => true,
+        'show_in_admin_bar'   => true,
+        'menu_position'       => 5,
+        'public'              => true,
+        'publicly_queryable' => true,
+        'exclude_from_search' => false,
+        'has_archive' => true,
+        'query_var' => true,
+        'can_export' => true,
+        'rewrite' => true,
+        'capability_type' => 'page'
+    );
+
+    register_post_type( 'boxing', $args );
+};
+
+	add_filter( 'cmb_meta_boxes', 'cmb_sample_metaboxes' );
+
+	function cmb_sample_metaboxes( array $meta_boxes ) {
+
+	  // Start with an underscore to hide fields from custom fields list
+	  $prefix = '_cmb_';
+
+	  /**
+	   * Sample metabox to demonstrate each field type included
+	   */
+	  $meta_boxes['boxer_one_metabox'] = array(
+	    'id'         => 'boxer_one_metabox',
+	    'title'      => __( 'Boxer One', 'cmb' ),
+	    'pages'      => array( 'boxing' ), // Post type
+	    'context'    => 'normal',
+	    'priority'   => 'high',
+	    'show_names' => true, // Show field names on the left
+	    // 'cmb_styles' => true, // Enqueue the CMB stylesheet on the frontend
+	    'fields'     => array(
+	            array(
+				    'name' => 'Height',
+				    'id' => $prefix . 'height',
+				    'type' => 'text'
+				),
+				array(
+				    'name' => 'Name',
+				    'id' => $prefix . 'name',
+				    'type' => 'text'
+				),
+				array(
+				    'name' => 'Weight',
+				    'id' => $prefix . 'weight',
+				    'type' => 'text'
+				),
+				array(
+				    'name' => 'Hometown',
+				    'id' => $prefix . 'hometown',
+				    'type' => 'text'
+				),
+				array(
+				    'name' => 'Occupation',
+				    'id' => $prefix . 'occupation',
+				    'type' => 'text'
+				),
+				array(
+				    'name' => 'Bio',
+				    'desc' => 'Enter Boxers Bio',
+				    'id' => $prefix . 'bio',
+				    'type' => 'wysiwyg',
+				    'options' => array(),
+				),
+				array(
+				    'name' => 'Headshot',
+				    'desc' => 'Upload Boxer Picture',
+				    'id' => $prefix . 'headshot',
+				    'type' => 'file',
+				    'allow' => array( 'attachment' ) // limit to just attachments with array( 'attachment' )
+				),
+	        ),
+	    );
+
+	    return $meta_boxes;
+	}
+
+	add_filter( 'cmb_meta_boxes', 'cmb_boxers_metaboxes' );
+
+	function cmb_boxers_metaboxes( array $meta_boxes ) {
+
+	  // Start with an underscore to hide fields from custom fields list
+	  $prefix = '_cmb_';
+
+	  /**
+	   * Sample metabox to demonstrate each field type included
+	   */
+	  $meta_boxes['boxer_two_metabox'] = array(
+	    'id'         => 'boxer_two_metabox',
+	    'title'      => __( 'Boxer Two', 'cmb' ),
+	    'pages'      => array( 'boxing' ), // Post type
+	    'context'    => 'normal',
+	    'priority'   => 'high',
+	    'show_names' => true, // Show field names on the left
+	    // 'cmb_styles' => true, // Enqueue the CMB stylesheet on the frontend
+	    'fields'     => array(
+	            array(
+				    'name' => 'Height',
+				    'id' => $prefix . 'height_two',
+				    'type' => 'text'
+				),
+				array(
+				    'name' => 'Name',
+				    'id' => $prefix . 'name_two',
+				    'type' => 'text'
+				),
+				array(
+				    'name' => 'Weight',
+				    'id' => $prefix . 'weight_two',
+				    'type' => 'text'
+				),
+				array(
+				    'name' => 'Hometown',
+				    'id' => $prefix . 'hometown_two',
+				    'type' => 'text'
+				),
+				array(
+				    'name' => 'Occupation',
+				    'id' => $prefix . 'occupation_two',
+				    'type' => 'text'
+				),
+				array(
+				    'name' => 'Bio',
+				    'desc' => 'Enter Boxers Bio',
+				    'id' => $prefix . 'bio_two',
+				    'type' => 'wysiwyg',
+				    'options' => array(),
+				),
+				array(
+				    'name' => 'Headshot',
+				    'desc' => 'Upload Boxer Picture',
+				    'id' => $prefix . 'headshot_two',
+				    'type' => 'file',
+				    'allow' => array( 'attachment' ) // limit to just attachments with array( 'attachment' )
+				),
+	        ),
+	    );
+
+	    return $meta_boxes;
+	}
+
+	add_action( 'init', 'cmb_initialize_cmb_meta_boxes', 9999 );
+	/**
+	 * Initialize the metabox class.
+	 */
+	function cmb_initialize_cmb_meta_boxes() {
+
+	  if ( ! class_exists( 'cmb_Meta_Box' ) )
+	    require_once 'Custom-Metaboxes-and-Fields-for-WordPress-master/init.php';
+
+	}
+
+
+
 ?>
