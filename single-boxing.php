@@ -28,9 +28,9 @@ get_header(); ?>
 	      			$bio_two = get_post_meta( $post->ID, '_cmb_bio_two', true );
 
 	      		?>
-	      			<div class="fighter_one col-sm-6 fighter">
-	      				<h3 class="boxer_name"><?php echo $name; ?></h3>
-	      				<h3 class="boxer_height"><?php echo $height; ?></h3>
+	      			<div class="fighter_one col-sm-5 fighter">
+	      				<h3 class="boxer_name col-sm-6"><?php echo $name; ?></h3>
+	      				<h3 class="boxer_height col-sm-6"><?php echo $height; ?></h3>
 	      				<img src="<?php echo $pic ?>">
 	      				<h3><span class="glyphicon glyphicon-user">Stats</span></h3>
 	      				<?php 
@@ -41,10 +41,10 @@ get_header(); ?>
 
 	      				?>
 	      			</div>
-	      			<img id="versus" src="wp-content/themes/vlrfc_theme/images/versus.png">
-	      			<div class="fighter_two col-sm-6 fighter">
-						<h3 class="boxer_name"><?php echo $name_two; ?></h3>
-	      				<h3 class="boxer_height"><?php echo $height_two; ?></h3>
+	      				<img  id="versus" src="wp-content/themes/vlrfc_theme/images/versus.png">
+	      			<div class="fighter_two col-sm-5 fighter">
+						<h3 class="boxer_name col-sm-6"><?php echo $name_two; ?></h3>
+	      				<h3 class="boxer_height col-sm-6"><?php echo $height_two; ?></h3>
 	      				<img src="<?php echo $pic_two ?>">
 	      				<h3><span class="glyphicon glyphicon-user">Stats</span></h3>
 	      				<?php 
