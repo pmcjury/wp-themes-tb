@@ -1878,7 +1878,15 @@ input[type="submit"]:hover {
 }
 .fighter h4{
 	text-align: left;
-	padding: 0px 82px;
+	padding: 0px 50px;
+}
+
+.fighter .glyphicon-user{
+	text-align: left;
+	margin-left: 50px;
+	margin-top: 6px;
+	width: 150%;
+	border-bottom: 1px solid black;
 }
 
 /*

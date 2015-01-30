@@ -32,6 +32,7 @@ get_header(); ?>
 	      				<h3 class="boxer_name"><?php echo $name; ?></h3>
 	      				<h3 class="boxer_height"><?php echo $height; ?></h3>
 	      				<img src="<?php echo $pic ?>">
+	      				<h3><span class="glyphicon glyphicon-user">Stats</span></h3>
 	      				<?php 
 	      					if($weight){ echo '<h4>Weight: ' . $weight . '</h4>' ;} 
 	      					if($hometown){ echo '<h4>Hometown: ' . $hometown . '</h4>' ;} 
@@ -45,6 +46,7 @@ get_header(); ?>
 						<h3 class="boxer_name"><?php echo $name_two; ?></h3>
 	      				<h3 class="boxer_height"><?php echo $height_two; ?></h3>
 	      				<img src="<?php echo $pic_two ?>">
+	      				<h3><span class="glyphicon glyphicon-user">Stats</span></h3>
 	      				<?php 
 	      					if($weight_two){ echo '<h4>Weight: ' . $weight_two . '</h4>' ;} 
 	      					if($hometown_two){ echo '<h4>Hometown: ' . $hometown_two . '</h4>' ;} 
