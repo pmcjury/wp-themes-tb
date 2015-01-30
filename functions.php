@@ -104,9 +104,6 @@ include('inc/enqueue-scripts.php');
 include('inc/enqueue-styles.php');
 include('inc/custom-styles.php');
 
-//tax meta
-include('Tax-Meta-Class/Tax-meta-class/Tax-meta-class.php');
-
 add_action( 'init', 'register_cpt_boxing' );
 
 function register_cpt_boxing() {

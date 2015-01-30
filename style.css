@@ -1832,14 +1832,14 @@ input[type="submit"]:hover {
 	margin: 5px;
 	font-family: SteelfishRgRegular, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
-.fighter img{
-	padding-top: 15px;
-}
 .fighter p{
 	padding-left: 5px;
 	padding-right: 5px;
 	font-size: 1.692em;
 
+}
+.fighter img{
+	border: 5px solid black;
 }
 .fighter_one{
 	float: left;
@@ -1850,12 +1850,17 @@ input[type="submit"]:hover {
 .wdf_fundraiser_panel{
 	display: none;
 }
-.single-funder .entry-title{
+.single-boxing .entry-title{
 	text-align: center;
 	font-size: 2.923em;
 }
-.versus{
+#versus{
 	text-align: center;
+	position: relative;
+	top: 200px;
+	height: 50px;
+	width: 67px;
+	z-index: 1;
 }
 .fighter h3{
 	width: 50%;
@@ -1863,10 +1868,26 @@ input[type="submit"]:hover {
 
 .boxer_name{
 	float: left;
+	padding-top: 10px;
+	margin-bottom: 0px;
 }
 .boxer_height{
 	float: right;
+	padding-top: 10px;
+	margin-bottom: 0px;
 }
-.boxer h4{
+.fighter h4{
 	text-align: left;
+	padding: 0px 82px;
 }
+
+/*
+Placeholder, it's the selector for the progress bar content
+.ui-progressbar .ui-progressbar-value {
+	
+}*/
+
+
+
+
+

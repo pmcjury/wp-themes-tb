@@ -32,19 +32,25 @@ get_header(); ?>
 	      				<h3 class="boxer_name"><?php echo $name; ?></h3>
 	      				<h3 class="boxer_height"><?php echo $height; ?></h3>
 	      				<img src="<?php echo $pic ?>">
-	      				<h4>Weight: <?php echo $weight ?></h4>
-	      				<h4>Hometown: <?php echo $hometown ?></h4>
-	      				<h4>Occupation: <?php echo $job ?></h4>
-	      				<h4>Bio: <?php echo $bio ?></h4>
+	      				<?php 
+	      					if($weight){ echo '<h4>Weight: ' . $weight . '</h4>' ;} 
+	      					if($hometown){ echo '<h4>Hometown: ' . $hometown . '</h4>' ;} 
+	      					if($job){ echo '<h4>Occupation: ' . $job . '</h4>' ;} 
+	      					if($bio){ echo '<h4>Bio: ' . $bio . '</h4>' ;} 
+
+	      				?>
 	      			</div>
+	      			<img id="versus" src="wp-content/themes/vlrfc_theme/images/versus.png">
 	      			<div class="fighter_two col-sm-6 fighter">
 						<h3 class="boxer_name"><?php echo $name_two; ?></h3>
 	      				<h3 class="boxer_height"><?php echo $height_two; ?></h3>
 	      				<img src="<?php echo $pic_two ?>">
-	      				<h4>Weight: <?php echo $weight_two ?></h4>
-	      				<h4>Hometown: <?php echo $hometown_two ?></h4>
-	      				<h4>Occupation: <?php echo $job_two ?></h4>
-	      				<h4>Bio: <?php echo $bio_two ?></h4>
+	      				<?php 
+	      					if($weight_two){ echo '<h4>Weight: ' . $weight_two . '</h4>' ;} 
+	      					if($hometown_two){ echo '<h4>Hometown: ' . $hometown_two . '</h4>' ;} 
+	      					if($job_two){ echo '<h4>Occupation: ' . $job_two . '</h4>' ;} 
+	      					if($bio_two){ echo '<h4>Bio: ' . $bio_two . '</h4>' ;} 
+	      				 ?>
 	      			</div>
 	      		</div>
       		</div>
