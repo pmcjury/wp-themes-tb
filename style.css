@@ -1888,6 +1888,9 @@ Placeholder, it's the selector for the progress bar content
 	
 }*/
 
+.single-boxing #main{
+	background: none;
+}
 
 
 
