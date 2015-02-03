@@ -27,6 +27,13 @@ get_header(); ?>
 	      			$bio_two = get_post_meta( $post->ID, '_cmb_bio_two', true );
 
 	      		?>
+	      			<div class="progress progress-striped">
+						<div class="progress-bar progress-bar-danger active" style="width: 60%;">
+							<span class="sr-only">60% Complete</span>
+						</div>
+					</div>
+	      			<h1 class="fight_title"><?php echo $name ?><img  id="versus" src="wp-content/themes/vlrfc_theme/images/versus.png"><?php echo $name_two ?></h1>
+
 	      			<div class="fighter_one col-sm-5 fighter">
 	      				<h3 class="boxer_name col-sm-6"><?php echo $name; ?></h3>
 	      				<h3 class="boxer_height col-sm-6"><?php echo $height; ?></h3>
@@ -40,8 +47,7 @@ get_header(); ?>
 
 	      				?>
 	      			</div>
-	      				<img  id="versus" src="wp-content/themes/vlrfc_theme/images/versus.png">
-	      			<div class="fighter_two col-sm-5 fighter">
+	      					      			<div class="fighter_two col-sm-5 fighter">
 						<h3 class="boxer_name col-sm-6"><?php echo $name_two; ?></h3>
 	      				<h3 class="boxer_height col-sm-6"><?php echo $height_two; ?></h3>
 	      				<img src="<?php echo $pic_two ?>">
@@ -57,4 +63,11 @@ get_header(); ?>
 		</div><!-- #container -->
 
 <?php get_footer(); ?>
-
+<script>
+	jQuery(document).ready(function(){
+		jQuery(".progress").before(jQuery("div .wdf_goal"));
+		// get the progress percentage and set our progress bar to it
+		var percentage = jQuery(".wdf_goal_progress").attr("aria-valuenow");
+		jQuery(".progress-bar-danger").width(percentage.concat("%"));
+	});
+</script>

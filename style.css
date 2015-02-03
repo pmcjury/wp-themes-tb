@@ -1828,7 +1828,7 @@ input[type="submit"]:hover {
 }
 .fighter{
 	overflow: hidden;
-	background-color: rgba(252,0,0,0.7);
+	background-color: #d9534f;
 	border-radius: 5px;
 	text-align: center;
 	margin: 5px;
@@ -1857,12 +1857,8 @@ input[type="submit"]:hover {
 	font-size: 2.923em;
 }
 #versus{
-	text-align: center;
-	position: relative;
-	top: 200px;
 	height: 122px;
 	width: 125px;
-	z-index: 1;
 }
 .boxer_name, .boxer_height{
 	padding-top: 10px;
@@ -1881,16 +1877,16 @@ input[type="submit"]:hover {
 	border-bottom: 1px solid black;
 	float: left;
 }
-
-/*
-Placeholder, it's the selector for the progress bar content
-.ui-progressbar .ui-progressbar-value {
-	
-}*/
-
 .single-boxing #main{
 	background: none;
 }
+.fight_title{
+	text-align: center;
+}
+.wdf_goal_progress{
+	display: none;
+}
+
 
 
 
