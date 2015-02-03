@@ -1817,12 +1817,9 @@ input[type="submit"]:hover {
 }
 
 /*boxing*/
-/*#fight{
-	width: auto;
-	float: none;
-	border: none;
-
-}*/
+#fight{
+	margin-bottom: 10px;
+}
 .single-boxing .featured-image img {
 	margin-left: -15px;
 }
@@ -1849,7 +1846,7 @@ input[type="submit"]:hover {
 .fighter_two{
 	float: right;
 }
-.wdf_fundraiser_panel{
+#fight .wdf_fundraiser_panel{
 	display: none;
 }
 .single-boxing .entry-title{
@@ -1882,9 +1879,13 @@ input[type="submit"]:hover {
 }
 .fight_title{
 	text-align: center;
+	margin-bottom: 0px;
 }
-.wdf_goal_progress{
+#fight .wdf_goal_progress{
 	display: none;
+}
+#fight .wdf_goal{
+	font-size: 1.385em;
 }
 
 

@@ -69,5 +69,10 @@ get_header(); ?>
 		// get the progress percentage and set our progress bar to it
 		var percentage = jQuery(".wdf_goal_progress").attr("aria-valuenow");
 		jQuery(".progress-bar-danger").width(percentage.concat("%"));
+
+		// move social media to after fighter
+		jQuery("#fight").after(jQuery(".twitter-share-button"));
+		jQuery("#fight").after(jQuery(".fb-like"));
+
 	});
 </script>
