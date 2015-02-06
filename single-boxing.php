@@ -47,7 +47,7 @@ get_header(); ?>
 
 	      				?>
 	      			</div>
-	      					      			<div class="fighter_two col-sm-5 fighter">
+	      			<div class="fighter_two col-sm-5 fighter">
 						<h3 class="boxer_name col-sm-6"><?php echo $name_two; ?></h3>
 	      				<h3 class="boxer_height col-sm-6"><?php echo $height_two; ?></h3>
 	      				<img src="<?php echo $pic_two ?>">
@@ -61,7 +61,7 @@ get_header(); ?>
 	      			</div>
 	      		</div>
 		</div><!-- #container -->
-
+<?php comments_template( '', true ); ?>
 <?php get_footer(); ?>
 <script>
 	jQuery(document).ready(function(){

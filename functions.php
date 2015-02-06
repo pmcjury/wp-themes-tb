@@ -140,7 +140,7 @@ function register_cpt_boxing() {
         'labels' => $labels,
         'hierarchical' => true,
 
-		'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'custom-fields', 'page-attributes' ),
+		'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'custom-fields', 'page-attributes', 'comments' ),
         'taxonomies' => array( 'category', 'post_tag', 'page-category' ),
         'public' => true,
         'show_ui' => true,

@@ -1839,6 +1839,8 @@ input[type="submit"]:hover {
 }
 .fighter img{
 	border: 5px solid black;
+	max-width: 90%;
+	max-height: 50%;
 }
 .fighter_one{
 	float: left;
@@ -1847,6 +1849,9 @@ input[type="submit"]:hover {
 	float: right;
 }
 #fight .wdf_fundraiser_panel{
+	display: none;
+}
+#fight .wdf_progress_shortcode_title{
 	display: none;
 }
 .single-boxing .entry-title{
@@ -1864,6 +1869,7 @@ input[type="submit"]:hover {
 .fighter h4{
 	text-align: left;
 	padding: 0px 30px;
+	font-size: 1.9em;
 }
 
 .fighter .glyphicon-user{
