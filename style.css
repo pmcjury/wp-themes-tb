@@ -1825,7 +1825,8 @@ input[type="submit"]:hover {
 }
 .fighter{
 	overflow: hidden;
-	background-color: #d9534f;
+	background-color: black;
+	color: white;
 	border-radius: 5px;
 	text-align: center;
 	margin: 5px;
@@ -1838,7 +1839,7 @@ input[type="submit"]:hover {
 
 }
 .fighter img{
-	border: 5px solid black;
+	border: 5px solid white;
 	max-width: 90%;
 	max-height: 50%;
 }

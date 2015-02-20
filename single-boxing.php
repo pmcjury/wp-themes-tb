@@ -25,11 +25,13 @@ get_header(); ?>
 	      			$pic_two = get_post_meta( $post->ID, '_cmb_headshot_two', true );
 	      			$bio = get_post_meta( $post->ID, '_cmb_bio', true );
 	      			$bio_two = get_post_meta( $post->ID, '_cmb_bio_two', true );
+	      			$position = get_post_meta( $post->ID, '_cmb_position', true );
+	      			$position_two = get_post_meta( $post->ID, '_cmb_position_two', true );
 
 	      		?>
 	      			<div class="progress progress-striped">
-						<div class="progress-bar progress-bar-danger active" style="width: 60%;">
-							<span class="sr-only">60% Complete</span>
+						<div class="progress-bar progress-bar-danger active" style="width: 0%;">
+							<span class="sr-only">0% Complete</span>
 						</div>
 					</div>
 	      			<h1 class="fight_title"><?php echo $name ?><img  id="versus" src="wp-content/themes/vlrfc_theme/images/versus.png"><?php echo $name_two ?></h1>
@@ -43,6 +45,7 @@ get_header(); ?>
 	      					if($weight){ echo '<h4>Weight: ' . $weight . '</h4>' ;} 
 	      					if($hometown){ echo '<h4>Hometown: ' . $hometown . '</h4>' ;} 
 	      					if($job){ echo '<h4>Occupation: ' . $job . '</h4>' ;} 
+	      					if($position){ echo '<h4>Position: ' . $position . '</h4>' ;}
 	      					if($bio){ echo '<h4>Bio: ' . $bio . '</h4>' ;} 
 
 	      				?>
@@ -56,6 +59,7 @@ get_header(); ?>
 	      					if($weight_two){ echo '<h4>Weight: ' . $weight_two . '</h4>' ;} 
 	      					if($hometown_two){ echo '<h4>Hometown: ' . $hometown_two . '</h4>' ;} 
 	      					if($job_two){ echo '<h4>Occupation: ' . $job_two . '</h4>' ;} 
+	      					if($position_two){ echo '<h4>Position: ' . $position_two . '</h4>' ;}
 	      					if($bio_two){ echo '<h4>Bio: ' . $bio_two . '</h4>' ;} 
 	      				 ?>
 	      			</div>

@@ -206,6 +206,11 @@ function register_cpt_boxing() {
 				    'type' => 'text'
 				),
 				array(
+				    'name' => 'Position',
+				    'id' => $prefix . 'position',
+				    'type' => 'text'
+				),
+				array(
 				    'name' => 'Bio',
 				    'desc' => 'Enter Boxers Bio',
 				    'id' => $prefix . 'bio',
@@ -267,6 +272,10 @@ function register_cpt_boxing() {
 				array(
 				    'name' => 'Occupation',
 				    'id' => $prefix . 'occupation_two',
+				    'type' => 'text'
+				),array(
+				    'name' => 'Position',
+				    'id' => $prefix . 'position_two',
 				    'type' => 'text'
 				),
 				array(
