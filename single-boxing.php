@@ -29,11 +29,7 @@ get_header(); ?>
 	      			$position_two = get_post_meta( $post->ID, '_cmb_position_two', true );
 
 	      		?>
-	      			<div class="progress progress-striped">
-						<div class="progress-bar progress-bar-danger active" style="width: 0%;">
-							<span class="sr-only">0% Complete</span>
-						</div>
-					</div>
+	      			
 	      			<h1 class="fight_title"><?php echo $name ?><img  id="versus" src="wp-content/themes/vlrfc_theme/images/versus.png"><?php echo $name_two ?></h1>
 
 	      			<div class="fighter_one col-sm-5 fighter">
@@ -63,6 +59,11 @@ get_header(); ?>
 	      					if($bio_two){ echo '<h4>Bio: ' . $bio_two . '</h4>' ;} 
 	      				 ?>
 	      			</div>
+	      			<div class="progress progress-striped col-xs-12">
+						<div class="progress-bar progress-bar-danger active" style="width: 0%;">
+							<span class="sr-only">0% Complete</span>
+						</div>
+					</div>
 	      		</div>
 		</div><!-- #container -->
 <?php comments_template( '', true ); ?>

@@ -1826,7 +1826,8 @@ input[type="submit"]:hover {
 .fighter{
 	overflow: hidden;
 	background-color: black;
-	color: white;
+/*	box-shadow: inset 0px 0px 21px 8px grey;
+*/	color: white;
 	border-radius: 5px;
 	text-align: center;
 	margin: 5px;
@@ -1893,6 +1894,21 @@ input[type="submit"]:hover {
 }
 #fight .wdf_goal{
 	font-size: 1.385em;
+	float: left;
+	clear: left;
+}
+.single-boxing #comment{
+	width: 90%;
+}
+.single-boxing #respond{
+	margin-left: 5%;
+}
+.single-boxing .fb-like{
+	margin-left: 5%;
+}
+.progress{
+	height: 30px;
+	padding: 0px;
 }
 
 
