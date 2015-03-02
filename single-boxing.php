@@ -30,41 +30,49 @@ get_header(); ?>
 
 	      		?>
 	      			
-	      			<h1 class="fight_title"><?php echo $name ?><img  id="versus" src="wp-content/themes/vlrfc_theme/images/versus.png"><?php echo $name_two ?></h1>
+	      			<h1 class="fight_title">
+	      				<div class="boxer_name_title"><?php echo $name ?></div>
+	      				<img id="versus" src="wp-content/themes/vlrfc_theme/images/versus.png">
+	      				<div class="boxer_name_title"><?php echo $name_two ?></div>
+	      			</h1>
 
-	      			<div class="fighter_one col-sm-5 fighter">
-	      				<h3 class="boxer_name col-sm-6"><?php echo $name; ?></h3>
-	      				<h3 class="boxer_height col-sm-6"><?php echo $height; ?></h3>
-	      				<img src="<?php echo $pic ?>">
-	      				<h3><span class="glyphicon glyphicon-user">Stats</span></h3>
-	      				<?php 
-	      					if($weight){ echo '<h4>Weight: ' . $weight . '</h4>' ;} 
-	      					if($hometown){ echo '<h4>Hometown: ' . $hometown . '</h4>' ;} 
-	      					if($job){ echo '<h4>Occupation: ' . $job . '</h4>' ;} 
-	      					if($position){ echo '<h4>Position: ' . $position . '</h4>' ;}
-	      					if($bio){ echo '<h4>Bio: ' . $bio . '</h4>' ;} 
+	      			<div class="fighter_one_outer col-sm-5 fighter">
+	      				<div class="fighter_inner">
+		      				<h3 class="boxer_name alignleft"><?php echo $name; ?></h3>
+		      				<h3 class="boxer_height alignright"><?php echo $height; ?></h3>
+		      				<img src="<?php echo $pic ?>">
+		      				<h3><span class="glyphicon glyphicon-user">Stats</span></h3>
+		      				<?php 
+		      					if($weight){ echo '<h4 class="boxer_info"><span class="color_me_red">Weight:</span> ' . $weight . '</h4>' ;} 
+		      					if($hometown){ echo '<h4 class="boxer_info"><span class="color_me_red">Hometown:</span> ' . $hometown . '</h4>' ;} 
+		      					if($job){ echo '<h4 class="boxer_info"><span class="color_me_red">Occupation:</span>  ' . $job . '</h4>' ;} 
+		      					if($position){ echo '<h4 class="boxer_info"><span class="color_me_red">Position:</span>: ' . $position . '</h4>' ;}
+		      					if($bio){ echo '<h4 class="boxer_info"><span class="color_me_red">Bio:</span>  ' . $bio . '</h4>' ;} 
 
-	      				?>
+		      				?>
+		      			</div>
 	      			</div>
-	      			<div class="fighter_two col-sm-5 fighter">
-						<h3 class="boxer_name col-sm-6"><?php echo $name_two; ?></h3>
-	      				<h3 class="boxer_height col-sm-6"><?php echo $height_two; ?></h3>
-	      				<img src="<?php echo $pic_two ?>">
-	      				<h3><span class="glyphicon glyphicon-user">Stats</span></h3>
-	      				<?php 
-	      					if($weight_two){ echo '<h4>Weight: ' . $weight_two . '</h4>' ;} 
-	      					if($hometown_two){ echo '<h4>Hometown: ' . $hometown_two . '</h4>' ;} 
-	      					if($job_two){ echo '<h4>Occupation: ' . $job_two . '</h4>' ;} 
-	      					if($position_two){ echo '<h4>Position: ' . $position_two . '</h4>' ;}
-	      					if($bio_two){ echo '<h4>Bio: ' . $bio_two . '</h4>' ;} 
-	      				 ?>
+	      			<div class="fighter_two_outer col-sm-5 fighter">
+								<div class="fighter_inner">
+									<h3 class="boxer_name alignleft"><?php echo $name_two; ?></h3>
+		      				<h3 class="boxer_height alignright"><?php echo $height_two; ?></h3>
+		      				<img src="<?php echo $pic_two ?>">
+		      				<h3><span class="glyphicon glyphicon-user">Stats</span></h3>
+		      				<?php 
+		      					if($weight_two){ echo '<h4 class="boxer_info"><span class="color_me_red">Weight:</span> ' . $weight_two . '</h4>' ;} 
+		      					if($hometown_two){ echo '<h4 class="boxer_info"><span class="color_me_red">Hometown:</span> ' . $hometown_two . '</h4>' ;} 
+		      					if($job_two){ echo '<h4 class="boxer_info"><span class="color_me_red">Occupation:</span> ' . $job_two . '</h4>' ;} 
+		      					if($position_two){ echo '<h4 class="boxer_info"><span class="color_me_red">Position:</span> ' . $position_two . '</h4>' ;}
+		      					if($bio_two){ echo '<h4 class="boxer_info"><span class="color_me_red">Bio:</span> ' . $bio_two . '</h4>' ;} 
+		      				 ?>
+		      			</div>
 	      			</div>
 	      			<div class="progress progress-striped col-xs-12">
-						<div class="progress-bar progress-bar-danger active" style="width: 0%;">
-							<span class="sr-only">0% Complete</span>
+								<div class="progress-bar progress-bar-danger active" style="width: 0%;">
+								<span class="sr-only">0% Complete</span>
+							</div>
 						</div>
-					</div>
-	      		</div>
+	      	</div>
 		</div><!-- #container -->
 <?php comments_template( '', true ); ?>
 <?php get_footer(); ?>
