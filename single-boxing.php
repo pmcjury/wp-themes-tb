@@ -79,5 +79,9 @@ get_header(); ?>
 		jQuery("#fight").after(jQuery(".twitter-share-button"));
 		jQuery("#fight").after(jQuery(".fb-like"));
 
+		//move fundraising panel to above progress bar
+		jQuery(".progress").after(jQuery(".wdf_fundraiser_panel"));
+		jQuery(".wdf_fundraiser_panel").after(jQuery(".progress"));
+
 	});
 </script>

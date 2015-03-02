@@ -1851,9 +1851,13 @@ input[type="submit"]:hover {
 	float: right;
 }
 #fight .wdf_fundraiser_panel{
+	float: left;
+	clear: left;
+}
+#fight .wdf_goal_progress{
 	display: none;
 }
-#fight .wdf_progress_shortcode_title{
+#fight .wdf_goal{
 	display: none;
 }
 .single-boxing .entry-title{
@@ -1889,9 +1893,9 @@ input[type="submit"]:hover {
 	text-align: center;
 	margin-bottom: 0px;
 }
-#fight .wdf_goal_progress{
+/*#fight .wdf_goal_progress{
 	display: none;
-}
+}*/
 #fight .wdf_goal{
 	font-size: 1.385em;
 	float: left;
@@ -1906,9 +1910,10 @@ input[type="submit"]:hover {
 .single-boxing .fb-like{
 	margin-left: 5%;
 }
-.progress{
+#fight .progress{
 	height: 30px;
 	padding: 0px;
+	margin-top: 10px;
 }
 
 
