@@ -83,5 +83,7 @@ get_header(); ?>
 		jQuery(".progress").after(jQuery(".wdf_fundraiser_panel"));
 		jQuery(".wdf_fundraiser_panel").after(jQuery(".progress"));
 
+		jQuery(".wdf_send_donation").val("Back These Boxers");
+
 	});
 </script>

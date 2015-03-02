@@ -1915,6 +1915,9 @@ input[type="submit"]:hover {
 	padding: 0px;
 	margin-top: 10px;
 }
+#fight .wdf_recurring_select{
+	color: black;
+}
 
 
 
