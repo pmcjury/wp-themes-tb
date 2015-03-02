@@ -2,34 +2,38 @@
 <html <?php language_attributes(); ?>>
 <head>
 <!-- font loader -->
+<link href='http://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
 <script type="text/javascript">
 WebFontConfig = {
-custom: {
-families: ['SteelfishRgRegular'],
-urls: ['<?php echo get_bloginfo('stylesheet_directory'); ?>/fonts.css']
-}
+	custom: {
+		families: ['SteelfishRgRegular'],
+		urls: ['<?php echo get_bloginfo('stylesheet_directory'); ?>/fonts.css']
+	}
 };
 (function() {
-var wf = document.createElement('script');
-wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-  '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-wf.type = 'text/javascript';
-wf.async = 'true';
-var s = document.getElementsByTagName('script')[0];
-s.parentNode.insertBefore(wf, s);
-})(); </script>
+	var wf = document.createElement('script');
+	wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+  	'://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+	wf.type = 'text/javascript';
+	wf.async = 'true';
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(wf, s);
+})(); 
+</script>
 <!-- end font loader -->
+
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <title><?php
-global $page, $paged;
-wp_title( get_option( 'tb_title_delimiter' ), true, 'right' );
-bloginfo( 'name' );
-$site_description = get_bloginfo( 'description', 'display' );
-if ( $site_description && ( is_home() || is_front_page() ) )
-	echo ' ' . get_option( 'tb_title_delimiter' ) . ' ' . $site_description;
-if ( $paged >= 2 || $page >= 2 )
-	echo ' ' . get_option( 'tb_title_delimiter' ) . ' ' . sprintf( __( 'Page %s', 'themeboy' ), max( $paged, $page ) );
+	global $page, $paged;
+	wp_title( get_option( 'tb_title_delimiter' ), true, 'right' );
+	bloginfo( 'name' );
+	$site_description = get_bloginfo( 'description', 'display' );
+	if ( $site_description && ( is_home() || is_front_page() ) )
+		echo ' ' . get_option( 'tb_title_delimiter' ) . ' ' . $site_description;
+	if ( $paged >= 2 || $page >= 2 )
+		echo ' ' . get_option( 'tb_title_delimiter' ) . ' ' . sprintf( __( 'Page %s', 'themeboy' ), max( $paged, $page ) );
 ?></title>
+
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <!--[if IE]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>

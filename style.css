@@ -159,7 +159,7 @@ textarea {
 /* HEADERS */
 
 h1, h2, h3, h4, h5 {
-	font-family: SteelfishRgRegular, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-family: 'Oswald', HelveticaNeue, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: normal;
 	margin: 0 0 0.5em;
 }
@@ -1840,15 +1840,22 @@ input[type="submit"]:hover {
 
 }
 .fighter img{
-	border: 5px solid white;
-	max-width: 90%;
-	max-height: 50%;
+	border: 3px solid white;
+	max-width: 100%;
+	/*max-height: 50%;*/
 }
-.fighter_one{
+.fighter_one_outer{
 	float: left;
+	padding: 0;
 }
-.fighter_two{
+.fighter_two_outer{
 	float: right;
+	padding: 0;
+}
+.fighter_inner{
+	width: 80%;
+	margin: 10%;
+	/*margin: 25px;*/
 }
 #fight .wdf_fundraiser_panel{
 	display: none;
@@ -1865,30 +1872,44 @@ input[type="submit"]:hover {
 	width: 125px;
 }
 .boxer_name, .boxer_height{
-	padding-top: 10px;
-	margin-bottom: 0px;
+	margin-bottom: 5px;
+	color: #dd0000;
 }
 .fighter h4{
 	text-align: left;
 	padding: 0px 30px;
 	font-size: 1.9em;
 }
-
 .fighter .glyphicon-user{
 	text-align: left;
-	margin-left: 30px;
-	margin-top: 6px;
-	width: 80%;
-	border-bottom: 1px solid black;
+	/*margin-left: 30px;*/
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+	border-bottom: 1px solid #dd0000;
 	float: left;
+	color: #dd0000;
+}
+h4.boxer_info{
+	padding-left: 0;
+}
+.color_me_red{
+	color:#dd0000;
 }
 .single-boxing #main{
 	background: none;
 }
 .fight_title{
 	text-align: center;
-	margin-bottom: 0px;
+	margin-top: -26px;
+	margin-bottom: 20px;
 }
+.boxer_name_title{
+	display: inline;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
 #fight .wdf_goal_progress{
 	display: none;
 }
