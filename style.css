@@ -1,8 +1,8 @@
 /*
-Theme Name: Football Club
+Theme Name: VLRFC based on Football Club
 Theme URI: http://www.themeboy.com/themes/footballclub
 Description: Soccer Team Wordpress Theme
-Author: ThemeBoy
+Author: ThemeBoy / VLRFC Web Team
 Author URI: http://www.themeboy.com
 Version: 2.3.2
 Tags: light, white, gray, two-columns, right-sidebar, fixed-width, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, theme-options, translation-ready, rtl-language-support, responsive
@@ -159,7 +159,7 @@ textarea {
 /* HEADERS */
 
 h1, h2, h3, h4, h5 {
-	font-family: SteelfishRgRegular, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-family: 'Oswald', HelveticaNeue, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: normal;
 	margin: 0 0 0.5em;
 }
@@ -1815,3 +1815,133 @@ input[type="submit"]:hover {
 	display: block;
 	padding-top: 16px;
 }
+
+/*boxing*/
+#fight{
+	margin-bottom: 10px;
+}
+.single-boxing .featured-image img {
+	margin-left: -15px;
+}
+.fighter{
+	overflow: hidden;
+	background-color: black;
+/*	box-shadow: inset 0px 0px 21px 8px grey;
+*/	color: white;
+	border-radius: 5px;
+	text-align: center;
+	margin: 5px;
+	font-family: SteelfishRgRegular, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+.fighter p{
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 1.692em;
+
+}
+.fighter img{
+	border: 3px solid white;
+	max-width: 100%;
+	/*max-height: 50%;*/
+}
+.fighter_one_outer{
+	float: left;
+	padding: 0;
+}
+.fighter_two_outer{
+	float: right;
+	padding: 0;
+}
+.fighter_inner{
+	width: 80%;
+	margin: 10%;
+	/*margin: 25px;*/
+}
+#fight .wdf_fundraiser_panel{
+	float: left;
+	clear: left;
+}
+#fight .wdf_goal_progress{
+	display: none;
+}
+#fight .wdf_goal{
+	display: none;
+}
+.single-boxing .entry-title{
+	text-align: center;
+	font-size: 2.923em;
+}
+#versus{
+	height: 122px;
+	width: 125px;
+}
+.boxer_name, .boxer_height{
+	margin-bottom: 5px;
+	color: #dd0000;
+}
+.fighter h4{
+	text-align: left;
+	padding: 0px 30px;
+	font-size: 1.9em;
+}
+.fighter .glyphicon-user{
+	text-align: left;
+	/*margin-left: 30px;*/
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+	border-bottom: 1px solid #dd0000;
+	float: left;
+	color: #dd0000;
+}
+h4.boxer_info{
+	padding-left: 0;
+}
+.color_me_red{
+	color:#dd0000;
+}
+.single-boxing #main{
+	background: none;
+}
+.fight_title{
+	text-align: center;
+	margin-top: -26px;
+	margin-bottom: 20px;
+}
+
+.boxer_name_title{
+	display: inline;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+#fight .wdf_goal_progress{
+	display: none;
+}
+#fight .wdf_goal{
+	font-size: 1.385em;
+	float: left;
+	clear: left;
+}
+.single-boxing #comment{
+	width: 90%;
+}
+.single-boxing #respond{
+	margin-left: 5%;
+}
+.single-boxing .fb-like{
+	margin-left: 5%;
+}
+#fight .progress{
+	height: 30px;
+	padding: 0px;
+	margin-top: 10px;
+}
+#fight .wdf_recurring_select{
+	color: black;
+}
+
+
+
+
+
